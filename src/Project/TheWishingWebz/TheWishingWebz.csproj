@@ -1199,7 +1199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Utilities.cs" />
-    <Compile Include="Classes\xconnect\PreventTrackingUntilConsent.cs" />
     <Compile Include="Controllers\global\ContentController.cs" />
     <Compile Include="Controllers\global\HeaderController.cs" />
     <Compile Include="Controllers\global\FooterController.cs" />

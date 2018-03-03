@@ -3,7 +3,7 @@ using Sitecore.Analytics.Pipelines.InitializeTracker;
 using Sitecore.Analytics.Pipelines.StartTracking;
 using Sitecore.Diagnostics;
 
-namespace TheWishingWebz.Classes.xconnect
+namespace GDT.TrackingConsent.Classes.xconnect
 {
     public class PreventTrackingUntilConsent : InitializeTracker
     {
