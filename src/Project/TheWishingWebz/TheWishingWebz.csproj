@@ -1166,6 +1166,7 @@
     <Content Include="App_Data\serialization\master\sitecore\templates\wishingwebz\D_Header\Data Header.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\wishingwebz\D_Header\__Standard Values.item" />
     <Content Include="App_Config\Include\Sitecore.Analytics.PreventTrackingUntilConsent.config" />
+    <Content Include="App_Config\Include\zzSitecore.XConnect.Client.Configuration.GDT.TrackingConsent.config" />
     <None Include="packages.config" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -1199,7 +1200,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Utilities.cs" />
-    <Compile Include="Classes\xconnect\PreventTrackingUntilConsent.cs" />
     <Compile Include="Controllers\global\ContentController.cs" />
     <Compile Include="Controllers\global\HeaderController.cs" />
     <Compile Include="Controllers\global\FooterController.cs" />
@@ -1223,6 +1223,12 @@
     <Folder Include="Models\crp\" />
     <Folder Include="Views\bp\" />
     <Folder Include="Views\crp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\GDT.TrackingConsent\GDT.TrackingConsent.csproj">
+      <Project>{e925f7ce-0a10-4ec8-ae1e-bddb074c439b}</Project>
+      <Name>GDT.TrackingConsent</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

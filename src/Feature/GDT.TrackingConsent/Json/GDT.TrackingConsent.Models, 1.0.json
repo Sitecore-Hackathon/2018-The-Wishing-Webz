@@ -1,0 +1,73 @@
+{
+  "Name": "ConsentModel",
+  "Version": "1.0",
+  "References": [
+    {
+      "Name": "XConnect",
+      "Version": "1.0"
+    },
+    {
+      "Name": "Sitecore.XConnect.Collection.Model",
+      "Version": "9.0"
+    }
+  ],
+  "Types": {
+    "XConnectTut.Facets.ConsentInfo": {
+        "Type": "Facet",
+        "BaseType": "Sitecore.XConnect.Facet",
+        "ClrType": "GDT.TrackingConsent.Facets.ConsentInfo, GDT.TrackingConsent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Properties": {
+            "Consents": {
+                "Type": [
+                    "XConnectTut.Models.Objects.ConsentObject"
+                ]
+            }
+        }
+    },
+    "XConnectTut.Models.Objects.ConsentObject": {
+        "Type": "Complex",
+        "ClrType": "GDT.TrackingConsent.Models.Objects.ConsentObject, GDT.TrackingConsent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Properties": {
+            "rootId": {
+                "Type": "Sitecore.Data.ID"
+            },
+            "policyId": {
+                "Type": "Sitecore.Data.ID"
+            },
+            "policyVersion": {
+                "Type": "Int32"
+            },
+            "language": {
+                "Type": "Sitecore.Globalization.Language"
+            },
+            "timestamp": {
+                "Type": "DateTime"
+            },
+            "consent": {
+                "Type": "Boolean"
+            }
+        }
+    },
+    "Sitecore.Data.ID": {
+      "Type": "Complex",
+      "ClrType": "Sitecore.Data.ID, Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "Properties": {
+        "IsGlobalNullId": {
+          "Type": "Boolean"
+        }
+      }
+    },
+    "Sitecore.Globalization.Language": {
+      "Type": "Complex",
+      "ClrType": "Sitecore.Globalization.Language, Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "Properties": {}
+    }
+  },
+  "Facets": [
+    {
+        "Target": "Contact",
+        "Name": "ConsentInfo",
+        "Type": "GDT.TrackingConsent.Facets.ConsentInfo"
+    }
+  ]
+}
