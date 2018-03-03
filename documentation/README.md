@@ -21,10 +21,19 @@ Does your module rely on other Sitecore modules or frameworks?
 - Sitecore 9.0.1 
 - XConnect
 
-## Installation
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
+## How To Install XConsent Module
+- Download [XConsent-1.0.0.zip](#link-to-package)
+- Extract to Location of Your Choice
+    - '[Location of Your Choice]/XConsent-1.0.0-installer.zip'
+    - '[Location of Your Choice]/GDT.TrackingConsent.Models, 1.0.json'
+- Install 'XConsent-1.0.0-installer.zip' via Sitecore Package Installer
+- Paste 'GDT.TrackingConsent.Models, 1.0.json' in below locations:
+    - '[Sitecore Install Location]/<sitecore install name>xconnect\App_data\Models'
+    - '[Sitecore Install Location]/<sitecore install name>xconnect\App_data\jobs\continuous\IndexWorker\App_data\Models'
+- **Success!**    
 
-## Configuration
+
+## Configuration and Usage
 
 Inherit Base Template on your rootPath item
 ```xml
@@ -33,22 +42,6 @@ Inherit Base Template on your rootPath item
 In above example, /sitecore/content would need to inherit Base_XConsent
 
 On /sitecore/content, Check XConsent Enabled, and Link XConsent Policy to your Privacy Policy
-
-## Usage
-
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
-
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
-
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
 
 ## Video
 :D
