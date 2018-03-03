@@ -69,6 +69,20 @@
       $(this).addClass("floating-label-form-group-with-focus");
     }).on("blur", ".floating-label-form-group", function() {
       $(this).removeClass("floating-label-form-group-with-focus");
+        });
+
+      // Load Consent
+    $(document).ready(function () {
+        setTimeout(function () {
+            if ($('#consent-modal-1').length) {
+                $.magnificPopup.open({
+                    items: {
+                        src: '#consent-modal-1'
+                    },
+                    type: 'inline'
+                });
+            }
+        }, 1000);
     });
   });
 
