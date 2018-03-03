@@ -1178,6 +1178,8 @@
     <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent\Base XConsent\XConsent Policy.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent\__Standard Values.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\XConsent.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\bp\home\privacy.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\crp\home\privacy.item" />
     <None Include="packages.config" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.min.css" />
