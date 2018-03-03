@@ -6,10 +6,10 @@ If there are any post-install steps required then please include it in the docum
 # How To Install XConsent Module
 - Download XConsent-1.0.0.zip
 - Extract to Location of Your Choice
-    - <Location of Your Choice>/XConsent-1.0.0-installer.zip
-    - <Location of Your Choice>/GDT.TrackingConsent.Models, 1.0.json
+    - '[Location of Your Choice]/XConsent-1.0.0-installer.zip'
+    - '[Location of Your Choice]/GDT.TrackingConsent.Models, 1.0.json'
 - Install 'XConsent-1.0.0-installer.zip' via Sitecore Package Installer
 - Paste 'GDT.TrackingConsent.Models, 1.0.json' in below locations:
-    - <Sitecore Install Location>\<sitecore install name>xconnect\App_data\Models
-    - <Sitecore Install Location>\<sitecore install name>xconnect\App_data\jobs\continuous\IndexWorker\App_data\Models
-- Success!    
+    - '[Sitecore Install Location]\<sitecore install name>xconnect\App_data\Models'
+    - '[Sitecore Install Location]\<sitecore install name>xconnect\App_data\jobs\continuous\IndexWorker\App_data\Models'
+- **Success!**    
