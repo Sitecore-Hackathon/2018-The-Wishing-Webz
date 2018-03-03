@@ -1,4 +1,5 @@
-﻿using Sitecore.Mvc.Presentation;
+﻿using Sitecore.Analytics;
+using Sitecore.Mvc.Presentation;
 using System;
 using System.Web.Mvc;
 using TheWishingWebz.Models.global;
@@ -21,6 +22,8 @@ namespace TheWishingWebz.Controllers.global
             try
             {
                 // TO DO: Get Consent Off Of Contact, and Return Answer Below
+                ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
+                Task<bool?> siteConsentProvided = consentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
 
                 return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
             }

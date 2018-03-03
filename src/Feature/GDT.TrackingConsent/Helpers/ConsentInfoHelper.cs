@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GDT.TrackingConsent.Helpers
 {
-    class ConsentInfoHelper
+    public class ConsentInfoHelper
     {
         public async Task<bool?> isConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context)
         {
