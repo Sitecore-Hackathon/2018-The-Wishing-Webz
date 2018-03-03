@@ -1,27 +1,34 @@
 ----item----
 version: 1
-id: {99F2D4B0-82AC-47F5-866E-618EFBAE13DC}
+id: {671540D4-390A-49C0-9173-9184F158F317}
 database: master
-path: /sitecore/templates/wishingwebz/bp/D_Site/Data Site
-parent: {973DE658-8C50-4C1C-B9CC-C1601E247DE1}
-name: Data Site
+path: /sitecore/templates/XConsent/Base_XConsent/__Standard Values
+parent: {0C28BDF5-E71D-471F-8FD4-FAF5DECF6842}
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
-created: 20180303T035457Z
+template: {0C28BDF5-E71D-471F-8FD4-FAF5DECF6842}
+templatekey: Base_XConsent
+created: 20180303T092639Z
 
 ----version----
 language: en
 version: 1
-revision: 267aba1c-7922-4971-b207-77e6ad846757
+revision: c15c99b6-f5db-4e65-b2da-4a932b3b0997
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20180303T035457Z
+20180303T092639Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -35,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-267aba1c-7922-4971-b207-77e6ad846757
+c15c99b6-f5db-4e65-b2da-4a932b3b0997
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T092832Z
+20180303T092639Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

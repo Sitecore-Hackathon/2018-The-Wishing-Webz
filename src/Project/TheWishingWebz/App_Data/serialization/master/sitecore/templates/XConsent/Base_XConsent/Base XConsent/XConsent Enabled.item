@@ -1,14 +1,14 @@
 ----item----
 version: 1
-id: {7D44E0B3-2A05-4D15-A9C0-8A56EA45236D}
+id: {2A546EEB-0185-4C6C-8874-5822C7747B65}
 database: master
-path: /sitecore/templates/wishingwebz/bp/D_Site/Data Site/Header
-parent: {99F2D4B0-82AC-47F5-866E-618EFBAE13DC}
-name: Header
+path: /sitecore/templates/XConsent/Base_XConsent/Base XConsent/XConsent Enabled
+parent: {7E2135C2-E221-4F3B-AE85-1F00EC8CA7BD}
+name: XConsent Enabled
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20180303T060210Z
+created: 20180303T092632Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -16,25 +16,18 @@ name: Type
 key: type
 content-length: 8
 
-Droptree
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 70
-
-query:./ancestor-or-self::*[contains(@@templatename, 'Site')]/Features
+Checkbox
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+100
 ----version----
 language: en
 version: 1
-revision: 8c9e646e-171f-4e48-a568-14424b5ce866
+revision: 399f53df-6a17-42ef-990a-b94db9f05a02
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,21 +35,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20180303T060210Z
+20180303T092632Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8c9e646e-171f-4e48-a568-14424b5ce866
+399f53df-6a17-42ef-990a-b94db9f05a02
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T092832Z
+20180303T092632Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

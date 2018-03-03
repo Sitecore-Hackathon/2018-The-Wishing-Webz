@@ -1,40 +1,40 @@
 ----item----
 version: 1
-id: {973DE658-8C50-4C1C-B9CC-C1601E247DE1}
+id: {0C28BDF5-E71D-471F-8FD4-FAF5DECF6842}
 database: master
-path: /sitecore/templates/wishingwebz/bp/D_Site
-parent: {59A2AB4D-070A-41FB-8280-11D0F98A8281}
-name: D_Site
+path: /sitecore/templates/XConsent/Base_XConsent
+parent: {CD6AA092-724C-46D7-A010-A1D05D555B4C}
+name: Base_XConsent
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
-created: 20180303T035447Z
+created: 20180303T092454Z
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 77
+content-length: 38
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{0C28BDF5-E71D-471F-8FD4-FAF5DECF6842}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
 key: __standard values
 content-length: 38
 
-{C6FE1E60-8E75-4EA4-91A0-5D81DE184924}
+{671540D4-390A-49C0-9173-9184F158F317}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 28
+content-length: 26
 
-People/16x16/cube_yellow.png
+people/16x16/cube_blue.png
 ----version----
 language: en
 version: 1
-revision: 4ef593ca-ac32-4bfa-9a00-5260cf9465f6
+revision: 829c4df0-1775-4904-b7ae-9ccd1bcedd7e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,7 +42,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180303T035447Z
+20180303T092454Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4ef593ca-ac32-4bfa-9a00-5260cf9465f6
+829c4df0-1775-4904-b7ae-9ccd1bcedd7e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T092832Z
+20180303T092653Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

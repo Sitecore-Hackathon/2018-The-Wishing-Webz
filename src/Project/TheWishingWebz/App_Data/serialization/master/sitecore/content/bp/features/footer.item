@@ -13,7 +13,7 @@ created: 20180303T055024Z
 ----version----
 language: en
 version: 1
-revision: d4b758f4-05d8-47ca-aa9f-4c37bbba7fbe
+revision: 729f9cf1-79ae-44e6-b4b3-1694a261f220
 
 ----field----
 field: {4D3E9EF1-2FAA-49A4-97D4-58F2AAA0564D}
@@ -26,7 +26,7 @@ footer
 field: {C8C7FC79-30E1-4D41-A0E6-9245973D5DD8}
 name: Description
 key: description
-content-length: 5839
+content-length: 5880
 
 <footer class="footer text-center">
             <div class="container">
@@ -84,21 +84,21 @@ content-length: 5839
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
                   <p class="help-block text-danger" />
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
                   <p class="help-block text-danger" />
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Password</label>
-                   <input class="form-control" id="password" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter a password." />
+                   <input class="form-control" id="password" name="password" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter a password." />
                   <p class="help-block text-danger" />
                 </div>
               </div>
@@ -162,14 +162,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d4b758f4-05d8-47ca-aa9f-4c37bbba7fbe
+729f9cf1-79ae-44e6-b4b3-1694a261f220
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T083840Z
+20180303T090951Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
