@@ -12,9 +12,9 @@ namespace GDT.TrackingConsent.Helpers
 {
     class ConsentInfoHelper
     {
-        public bool isConsented(Contact contact, SiteContext context)
+        public Boolean? isConsented(Contact contact, SiteContext context)
         {
-            Boolean isConsented = false;
+            Boolean? isConsented = null;
             if (contact != null && context != null) {
                 using (Sitecore.XConnect.Client.XConnectClient client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
                 {
@@ -36,6 +36,10 @@ namespace GDT.TrackingConsent.Helpers
                                                                                 && x.policyVersion.Equals(xconsentPolicy.Version.Number));
                                 if (obj != null && obj.consent)
                                     isConsented = true;
+                                else if(obj != null && !obj.consent)
+                                {
+                                    isConsented = false;
+                                }
                             }
                         }
                     }
