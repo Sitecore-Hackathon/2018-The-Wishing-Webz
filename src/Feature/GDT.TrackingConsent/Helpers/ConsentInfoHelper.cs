@@ -1,18 +1,18 @@
-﻿using Sitecore.Data;
+﻿using GDT.TrackingConsent.Facets;
+using GDT.TrackingConsent.Models.Objects;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Sites;
 using Sitecore.XConnect;
 using System;
 using System.Linq;
-using GDT.TrackingConsent.Facets;
-using GDT.TrackingConsent.Models.Objects;
-using Sitecore.Data.Fields;
+using System.Threading.Tasks;
 
 namespace GDT.TrackingConsent.Helpers
 {
     class ConsentInfoHelper
     {
-        public Boolean? isConsented(Contact contact, SiteContext context)
+        public async Task<bool?> isConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context)
         {
             Boolean? isConsented = null;
             if (contact != null && context != null) {
@@ -20,9 +20,14 @@ namespace GDT.TrackingConsent.Helpers
                 {
                     try
                     {
-                        var facet = contact.GetFacet<ConsentInfo>(ConsentInfo.DefaultFacetKey);
+                        var contactReference = new ContactReference(contact.ContactId);
+                        Task<Contact> contactTask = client.GetContactAsync(contactReference, new ContactExpandOptions() { });
 
-                        if(facet != null)
+                        Contact XContact = await contactTask;
+
+                        var facet = XContact.GetFacet<ConsentInfo>(ConsentInfo.DefaultFacetKey);
+
+                        if (facet != null)
                         {
                             if(facet.Consents != null)
                             {
