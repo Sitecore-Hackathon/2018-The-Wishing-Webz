@@ -14,8 +14,8 @@ namespace GDT.TrackingConsent.Classes.xconnect
             Assert.IsNotNull((object)Tracker.Current, "Tracker.Current");
             Assert.IsNotNull((object)Tracker.Current.Session, "Tracker.Current.Session");
             Assert.IsNotNull((object)Tracker.Current.Session.Contact, "Tracker.Current.Session.Contact");
-            
-            bool siteConsentProvided = ConsentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
+
+            bool siteConsentProvided = true;//ConsentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
             
 			if(!siteConsentProvided)
 			{

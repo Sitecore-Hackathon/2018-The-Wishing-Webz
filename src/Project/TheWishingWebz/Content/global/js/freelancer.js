@@ -73,16 +73,22 @@
 
     // Load Consent
     $(document).ready(function () {
-        setTimeout(function () {
-            if ($('#consent-modal-1').length) {
-                $.magnificPopup.open({
-                    items: {
-                        src: '#consent-modal-1'
-                    },
-                    type: 'inline'
-                });
-            }
-        }, 1000);
+        var consentResponse = getConsent();
+        console.log(consentResponse);
+        if (consentResponse.consentAnswered) {
+            // Nothing
+        } else {
+            setTimeout(function () {
+                if ($('#consent-modal-1').length) {
+                    $.magnificPopup.open({
+                        items: {
+                            src: '#consent-modal-1'
+                        },
+                        type: 'inline'
+                    });
+                }
+            }, 1000);
+        }
     });
     // Submit Consent
     $('#submitConsent').click(function (ev) {
@@ -108,6 +114,49 @@
         });
         ev.preventDefault();
     });
+
+    // Submit Account
+    $('#submitAccount').click(function (ev) {
+        var cuform = $('#frmAccount');
+        console.log(cuform);
+        $.ajax({
+            url: cuform.attr('action'),
+            type: 'POST',
+            data: cuform.serialize(),
+            success: function (response) {
+                if (!response.error) {
+                    // TO DO: Do stuff with answers
+                    console.log(response);
+                    var magnificPopup = $.magnificPopup.instance;
+                    magnificPopup.close();
+                } else {
+                    console.log(response.errorMsg)
+                }
+            },
+            error: function (ex) {
+                console.log(ex);
+            }
+        });
+        ev.preventDefault();
+    });
+
+
   });
+  function getConsent() {
+      $.ajax({
+          url: '/api/sitecore/Content/GetConsent',
+          type: 'GET',
+          success: function (response) {
+              if (!response.error) {
+                  return response;
+              } else {
+                  console.log(response.errorMsg)
+              }
+          },
+          error: function (ex) {
+              console.log(ex);
+          }
+      });
+  }
 
 })(jQuery); // End of use strict

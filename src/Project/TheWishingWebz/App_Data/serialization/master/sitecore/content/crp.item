@@ -13,8 +13,22 @@ created: 20180303T040204Z
 ----version----
 language: en
 version: 1
-revision: 81fd235d-330f-4fbf-a5fb-f62807230ff8
+revision: 8ead5317-a40c-4dc2-9340-144df2971fc6
 
+----field----
+field: {2A546EEB-0185-4C6C-8874-5822C7747B65}
+name: XConsent Enabled
+key: xconsent enabled
+content-length: 1
+
+1
+----field----
+field: {49ECABF4-80AD-4B2C-971A-D481C15A8CA0}
+name: XConsent Policy
+key: xconsent policy
+content-length: 38
+
+{4E1A663D-39B6-44C3-A538-A7BC7F1A4471}
 ----field----
 field: {3C5FCE85-D329-4AB5-90E6-27555D9C925B}
 name: Site Name
@@ -49,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-81fd235d-330f-4fbf-a5fb-f62807230ff8
+8ead5317-a40c-4dc2-9340-144df2971fc6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T063825Z
+20180303T092955Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
