@@ -23,8 +23,7 @@ namespace TheWishingWebz.Controllers.global
         {
             try
             {
-                ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
-                Task<bool?> siteConsentProvided = consentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
+                Task<bool?> siteConsentProvided = ConsentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
                 if (siteConsentProvided.Result == null)
                     return Json(new { error = false, consentAnswered = false, consented = false }, JsonRequestBehavior.AllowGet);
                 else if (siteConsentProvided.Result == true)
@@ -50,14 +49,14 @@ namespace TheWishingWebz.Controllers.global
                 if (!String.IsNullOrWhiteSpace(consent))
                 {
                     // Consented                    
-                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, true);
+                    ConsentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, true);
 
                     return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
                     // Does Not Consent
-                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, false);
+                    ConsentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, false);
 
                     return Json(new { error = false, consentAnswered = true, consented = false }, JsonRequestBehavior.AllowGet);
                 }                
@@ -82,13 +81,13 @@ namespace TheWishingWebz.Controllers.global
                 if (!String.IsNullOrWhiteSpace(consent))
                 {
                     // Consented
-                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, true);
+                    ConsentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, true);
                     return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
                     // Does Not Consent
-                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, false);
+                    ConsentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, false);
                     return Json(new { error = false, consentAnswered = true, consented = false }, JsonRequestBehavior.AllowGet);
                 }
             }

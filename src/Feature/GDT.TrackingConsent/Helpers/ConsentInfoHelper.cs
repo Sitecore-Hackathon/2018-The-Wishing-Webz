@@ -12,7 +12,7 @@ namespace GDT.TrackingConsent.Helpers
 {
     public class ConsentInfoHelper
     {
-        public async Task<bool?> isConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context)
+        public static async Task<bool?> isConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context)
         {
             Boolean? isConsented = null;
             if (contact != null && context != null) {
@@ -57,7 +57,7 @@ namespace GDT.TrackingConsent.Helpers
             return isConsented;
         }
 
-        public async void setConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context, Boolean consent)
+        public static async void setConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context, Boolean consent)
         {
             if (contact != null && context != null)
             {

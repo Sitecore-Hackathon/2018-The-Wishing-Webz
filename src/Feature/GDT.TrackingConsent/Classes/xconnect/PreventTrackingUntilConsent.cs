@@ -15,9 +15,8 @@ namespace GDT.TrackingConsent.Classes.xconnect
             Assert.IsNotNull((object)Tracker.Current, "Tracker.Current");
             Assert.IsNotNull((object)Tracker.Current.Session, "Tracker.Current.Session");
             Assert.IsNotNull((object)Tracker.Current.Session.Contact, "Tracker.Current.Session.Contact");
-
-            ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
-            Task<bool?> siteConsentProvided = consentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
+            
+            Task<bool?> siteConsentProvided = ConsentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
             
             // Abort tracking if we do not have consent to track via XConnect
 			if(siteConsentProvided.Result != true)
