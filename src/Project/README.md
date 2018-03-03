@@ -2,7 +2,7 @@
 
 Add your source code for your Project in this folder.
 
-# How To
+# How To Install Complete Demo 'TheWishingWebz'
 
 - Navigate to 'C:\Windows\System32\drivers\etc'
     - Open hosts file
