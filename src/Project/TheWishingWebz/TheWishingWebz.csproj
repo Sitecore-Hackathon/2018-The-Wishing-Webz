@@ -1167,6 +1167,12 @@
     <Content Include="App_Data\serialization\master\sitecore\templates\wishingwebz\D_Header\__Standard Values.item" />
     <Content Include="App_Config\Include\Sitecore.Analytics.PreventTrackingUntilConsent.config" />
     <Content Include="App_Config\Include\zzSitecore.XConnect.Client.Configuration.GDT.TrackingConsent.config" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent\Base XConsent.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent\Base XConsent\XConsent Enabled.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent\Base XConsent\XConsent Policy.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\XConsent\Base_XConsent\__Standard Values.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\XConsent.item" />
     <None Include="packages.config" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.min.css" />
