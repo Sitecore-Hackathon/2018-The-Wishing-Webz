@@ -57,7 +57,7 @@ namespace GDT.TrackingConsent.Helpers
             return isConsented;
         }
 
-        public async void setConsented(Contact contact, SiteContext context, Boolean consent)
+        public async void setConsented(Sitecore.Analytics.Tracking.Contact contact, SiteContext context, Boolean consent)
         {
             if (contact != null && context != null)
             {
@@ -71,8 +71,12 @@ namespace GDT.TrackingConsent.Helpers
                     {
                         try
                         {
-                            var facet = contact.GetFacet<ConsentInfo>(ConsentInfo.DefaultFacetKey);
+                            var contactReference = new ContactReference(contact.ContactId);
+                            Task<Contact> contactTask = client.GetContactAsync(contactReference, new ContactExpandOptions() { });
 
+                            Contact XContact = await contactTask;
+
+                            var facet = XContact.GetFacet<ConsentInfo>(ConsentInfo.DefaultFacetKey);
 
 
                             if (facet != null)
@@ -94,7 +98,7 @@ namespace GDT.TrackingConsent.Helpers
                                     }
 
                                     // Set the updated facet
-                                    client.SetFacet(contact, ConsentInfo.DefaultFacetKey, facet);
+                                    client.SetFacet(XContact, ConsentInfo.DefaultFacetKey, facet);
                                 }
                             }
                             else
