@@ -1203,7 +1203,7 @@
     <Content Include="Content\global\vendor\magnific-popup\magnific-popup.css" />
     <Content Include="Views\global\Layout.cshtml" />
     <Content Include="Views\global\Meta.cshtml" />
-    <None Include="Properties\PublishProfiles\schackwishingwebz01.pubxml" />
+    <None Include="Properties\PublishProfiles\schackwishingwebz03.pubxml" />
     <Content Include="Views\global\Footer.cshtml" />
     <Content Include="Views\global\Header.cshtml" />
     <Content Include="Views\global\Content.cshtml" />
