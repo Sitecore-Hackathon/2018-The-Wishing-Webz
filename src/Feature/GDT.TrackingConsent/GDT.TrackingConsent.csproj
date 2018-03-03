@@ -1034,12 +1034,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
-	<Compile Include="Classes\xconnect\PreventTrackingUntilConsent.cs" />
+    <Compile Include="Classes\xconnect\PreventTrackingUntilConsent.cs" />
     <Compile Include="Facets\ConsentInfo.cs" />
     <Compile Include="Helpers\ConsentInfoHelper.cs" />
     <Compile Include="Models\ConsentModel.cs" />
     <Compile Include="Models\Objects\ConsentObject.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

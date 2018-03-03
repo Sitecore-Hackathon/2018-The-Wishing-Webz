@@ -1225,7 +1225,7 @@
     <Folder Include="Views\crp\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\GDT.TrackingConsent\GDT.TrackingConsent.csproj">
+    <ProjectReference Include="..\..\Feature\GDT.TrackingConsent\GDT.TrackingConsent.csproj">
       <Project>{e925f7ce-0a10-4ec8-ae1e-bddb074c439b}</Project>
       <Name>GDT.TrackingConsent</Name>
     </ProjectReference>
