@@ -1057,6 +1057,7 @@
     <Content Include="Content\crp\img\crushedredpepper.png" />
     <Content Include="Content\global\css\freelancer.css" />
     <Content Include="Content\global\css\freelancer.min.css" />
+    <Content Include="Content\global\img\mkc_favicon_16x16.png" />
     <Content Include="Content\global\js\freelancer.js" />
     <Content Include="Content\global\js\freelancer.min.js" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap.css.map" />
@@ -1216,7 +1217,6 @@
     <Folder Include="Content\bp\js\" />
     <Folder Include="Content\crp\css\" />
     <Folder Include="Content\crp\js\" />
-    <Folder Include="Content\global\img\" />
     <Folder Include="Controllers\bp\" />
     <Folder Include="Controllers\crp\" />
     <Folder Include="Models\bp\" />
