@@ -13,7 +13,7 @@ created: 20180303T063511Z
 ----version----
 language: en
 version: 1
-revision: 5a7167e5-3196-4dbe-bb4b-790d9b1d98e6
+revision: 4d35dd20-ca5d-4d44-b413-b5ec21110589
 
 ----field----
 field: {4D3E9EF1-2FAA-49A4-97D4-58F2AAA0564D}
@@ -26,7 +26,7 @@ footer
 field: {C8C7FC79-30E1-4D41-A0E6-9245973D5DD8}
 name: Description
 key: description
-content-length: 5424
+content-length: 5869
 
 <footer class="footer text-center">
             <div class="container">
@@ -80,7 +80,7 @@ content-length: 5424
             <hr class="star-dark mb-5" />
             <img class="img-fluid mb-5" src="/Content/crp/img/crushedredpepper.png" alt="" />
             <h3 class="mb-5">Join the fun!  Sign Up Today!</h3>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+           <form name="frmAccount" id="frmAccount" method="post" action="/api/sitecore/Content/SetAccount" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -103,9 +103,15 @@ content-length: 5424
                 </div>
               </div>
               <br />
+<div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" name="accountConsent" id="accountConsent" type="checkbox" /> Yes, please!  I want to consent to tracking!
+                </div>
+              </div>
+              <br />
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Submit</button>
+                <button type="submit" class="btn btn-primary btn-xl" id="submitAccount">Submit</button>
               </div>
             </form>
         </div>
@@ -126,16 +132,16 @@ content-length: 5424
             <h2 class="text-secondary text-uppercase mb-0">Crushed Red Pepper Fan - Do You Consent?</h2>
             <hr class="star-dark mb-5" />
             <h3 class="mb-5">We want to improve your experience by tracking you!</h3>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form name="frmConsent" id="frmConsent" method="post" action="/api/sitecore/Content/SetConsent" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <input class="form-control" id="consent" type="checkbox" /> Yes, please!
+                  <input class="form-control" name="consent" id="consent" type="checkbox" /> Yes, please!
                 </div>
               </div>
               <br />
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Submit</button>
+                <button type="submit" class="btn btn-primary btn-xl" id="submitConsent">Submit</button>
               </div>
             </form>
         </div>
@@ -156,14 +162,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5a7167e5-3196-4dbe-bb4b-790d9b1d98e6
+4d35dd20-ca5d-4d44-b413-b5ec21110589
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T073702Z
+20180303T083913Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

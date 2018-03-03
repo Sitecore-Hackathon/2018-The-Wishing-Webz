@@ -71,7 +71,7 @@
       $(this).removeClass("floating-label-form-group-with-focus");
         });
 
-      // Load Consent
+    // Load Consent
     $(document).ready(function () {
         setTimeout(function () {
             if ($('#consent-modal-1').length) {
@@ -83,6 +83,30 @@
                 });
             }
         }, 1000);
+    });
+    // Submit Consent
+    $('#submitConsent').click(function (ev) {
+        var cuform = $('#frmConsent');
+        console.log(cuform);
+        $.ajax({
+            url: cuform.attr('action'),
+            type: 'POST',
+            data: cuform.serialize(),
+            success: function (response) {
+                if (!response.error) {
+                    // TO DO: Do stuff with answers
+                    console.log(response);
+                    var magnificPopup = $.magnificPopup.instance; 
+                    magnificPopup.close(); 
+                } else {
+                    console.log(response.errorMsg)
+                }
+            },
+            error: function (ex) {
+                console.log(ex);
+            }
+        });
+        ev.preventDefault();
     });
   });
 
