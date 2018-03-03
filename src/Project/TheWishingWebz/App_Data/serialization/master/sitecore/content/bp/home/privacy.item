@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {99802084-7E63-490B-AA79-91D1646E7BF6}
+id: {09317389-1266-4EC1-BDFE-BBCFC0EF60BC}
 database: master
 path: /sitecore/content/bp/home/privacy
 parent: {8656B98A-3A98-49A5-BB91-BC186ED77718}
@@ -8,12 +8,12 @@ name: privacy
 master: {00000000-0000-0000-0000-000000000000}
 template: {B7EC810C-A374-4FB0-9129-50B672F7FBC0}
 templatekey: Default
-created: 20180303T092931Z
+created: 20180303T114928Z
 
 ----version----
 language: en
 version: 1
-revision: 0f56ed3a-6c63-4f04-b8b1-596f394b57e7
+revision: a36e0620-1c80-4c93-9676-04d27d339f11
 
 ----field----
 field: {3EC999B8-CFFC-4A74-84B6-1215F9FF7F9A}
@@ -35,21 +35,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20180303T092931Z
+20180303T114928Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-0f56ed3a-6c63-4f04-b8b1-596f394b57e7
+a36e0620-1c80-4c93-9676-04d27d339f11
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T092931Z
+20180303T114928Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
