@@ -1,8 +1,10 @@
 ﻿using Sitecore.Analytics;
 using Sitecore.Mvc.Presentation;
 using System;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using TheWishingWebz.Models.global;
+using GDT.TrackingConsent.Helpers;
 
 namespace TheWishingWebz.Controllers.global
 {
@@ -21,11 +23,16 @@ namespace TheWishingWebz.Controllers.global
         {
             try
             {
-                // TO DO: Get Consent Off Of Contact, and Return Answer Below
                 ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
                 Task<bool?> siteConsentProvided = consentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
-
-                return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
+                if (siteConsentProvided.Result == null)
+                    return Json(new { error = false, consentAnswered = false, consented = false }, JsonRequestBehavior.AllowGet);
+                else if (siteConsentProvided.Result == true)
+                    return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
+                else if (siteConsentProvided.Result == false)
+                    return Json(new { error = false, consentAnswered = true, consented = false }, JsonRequestBehavior.AllowGet);
+                else
+                    return Json(new { error = false, consentAnswered = false, consented = false }, JsonRequestBehavior.AllowGet);
             }
             catch (Exception ex)
             {
@@ -39,19 +46,18 @@ namespace TheWishingWebz.Controllers.global
             string consent = Request.Form["consent"];
             try
             {
-                if(!String.IsNullOrWhiteSpace(consent))
+                ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
+                if (!String.IsNullOrWhiteSpace(consent))
                 {
-                    // Consented
-
-                    // TO DO: Submit Consent Answer
+                    // Consented                    
+                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, true);
 
                     return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
                     // Does Not Consent
-
-                    // TO DO: Submit Consent Answer
+                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, false);
 
                     return Json(new { error = false, consentAnswered = true, consented = false }, JsonRequestBehavior.AllowGet);
                 }                
@@ -72,20 +78,17 @@ namespace TheWishingWebz.Controllers.global
             
             try
             {
+                ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
                 if (!String.IsNullOrWhiteSpace(consent))
                 {
                     // Consented
-
-                    // TO DO: Submit Account (and Consent) Answer
-
+                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, true);
                     return Json(new { error = false, consentAnswered = true, consented = true }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
                     // Does Not Consent
-
-                    // TO DO: Submit Account (and Consent) Answer
-
+                    consentInfoHelper.setConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current, false);
                     return Json(new { error = false, consentAnswered = true, consented = false }, JsonRequestBehavior.AllowGet);
                 }
             }
