@@ -1197,6 +1197,13 @@
     <Content Include="Views\global\Footer.cshtml" />
     <Content Include="Views\global\Header.cshtml" />
     <Content Include="Views\global\Content.cshtml" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Utilities.cs" />
