@@ -54,7 +54,15 @@
     type: 'inline',
     preloader: false,
     focus: '#username',
-    modal: true
+    modal: true,
+    callbacks: {
+        open: function () {
+            var consentResponse = getConsent();
+            if (consentResponse.consentAnswered && consentResponse.consented) {
+                $('#accountConsent').prop('checked', true);
+            }
+        }
+    }
   });
   $(document).on('click', '.portfolio-modal-dismiss', function(e) {
     e.preventDefault();
@@ -143,12 +151,14 @@
 
   });
   function getConsent() {
+      var returnObj;
       $.ajax({
           url: '/api/sitecore/Content/GetConsent',
           type: 'GET',
+          async: false,
           success: function (response) {
               if (!response.error) {
-                  return response;
+                  returnObj = response;
               } else {
                   console.log(response.errorMsg)
               }
@@ -157,6 +167,9 @@
               console.log(ex);
           }
       });
+      console.log("returnObj")
+      console.log(returnObj);
+      return returnObj;
   }
 
 })(jQuery); // End of use strict
