@@ -1164,6 +1164,7 @@
     <Content Include="App_Data\serialization\master\sitecore\templates\wishingwebz\D_Header.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\wishingwebz\D_Header\Data Header.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\wishingwebz\D_Header\__Standard Values.item" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.PreventTrackingUntilConsent.config" />
     <None Include="packages.config" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\global\vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -1197,6 +1198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Utilities.cs" />
+    <Compile Include="Classes\xconnect\PreventTrackingUntilConsent.cs" />
     <Compile Include="Controllers\global\ContentController.cs" />
     <Compile Include="Controllers\global\HeaderController.cs" />
     <Compile Include="Controllers\global\FooterController.cs" />
