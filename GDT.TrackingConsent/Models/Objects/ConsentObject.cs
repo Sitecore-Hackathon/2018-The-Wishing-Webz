@@ -1,5 +1,4 @@
 ﻿using System;
-using Sitecore.Globalization;
 using Sitecore.Data;
 
 namespace GDT.TrackingConsent.Models.Objects

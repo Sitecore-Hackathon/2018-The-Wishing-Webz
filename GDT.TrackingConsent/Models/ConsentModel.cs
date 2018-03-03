@@ -1,7 +1,6 @@
 ﻿using Sitecore.XConnect;
 using Sitecore.XConnect.Schema;
-using System;
-using XConnectTut.Facets;
+using GDT.TrackingConsent.Facets;
 
 namespace GDT.TrackingConsent.Models
 {

@@ -1,12 +1,11 @@
 ﻿using Sitecore.Data;
 using Sitecore.Data.Items;
-using Sitecore.Globalization;
 using Sitecore.Sites;
 using Sitecore.XConnect;
 using System;
 using System.Linq;
-using XConnectTut.Facets;
-using XConnectTut.Models.Objects;
+using GDT.TrackingConsent.Facets;
+using GDT.TrackingConsent.Models.Objects;
 
 namespace GDT.TrackingConsent.Helpers
 {
@@ -37,7 +36,7 @@ namespace GDT.TrackingConsent.Helpers
                     }
                     catch (XdbExecutionException ex)
                     {
-                        // Handle exception
+                        //do something
                     }
                 }
             }

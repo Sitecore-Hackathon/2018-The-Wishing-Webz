@@ -1,5 +1,5 @@
 ﻿using Sitecore.XConnect;
-using XConnectTut.Models.Objects;
+using GDT.TrackingConsent.Models.Objects;
 using System;
 using System.Collections.Generic;
 
