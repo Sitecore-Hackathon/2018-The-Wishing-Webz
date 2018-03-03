@@ -3,6 +3,7 @@ using Sitecore.Analytics;
 using Sitecore.Analytics.Pipelines.InitializeTracker;
 using Sitecore.Analytics.Pipelines.StartTracking;
 using Sitecore.Diagnostics;
+using System.Threading.Tasks;
 
 namespace GDT.TrackingConsent.Classes.xconnect
 {
@@ -15,14 +16,17 @@ namespace GDT.TrackingConsent.Classes.xconnect
             Assert.IsNotNull((object)Tracker.Current.Session, "Tracker.Current.Session");
             Assert.IsNotNull((object)Tracker.Current.Session.Contact, "Tracker.Current.Session.Contact");
 
-            bool siteConsentProvided = true;//ConsentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
+            ConsentInfoHelper consentInfoHelper = new ConsentInfoHelper();
+            Task<bool?> siteConsentProvided = consentInfoHelper.isConsented(Tracker.Current.Session.Contact, Sitecore.Sites.SiteContext.Current);
             
-			if(!siteConsentProvided)
+            // Abort tracking if we do not have consent to track via XConnect
+			if(siteConsentProvided.Result != true)
 			{
 				args.AbortPipeline();
 			}
 			else
 			{
+                // Track contact via XConnect if they provide explicit consent
 				InitializeTrackerPipeline.Run(new InitializeTrackerArgs()
 				{
 					CanBeRobot = true,
