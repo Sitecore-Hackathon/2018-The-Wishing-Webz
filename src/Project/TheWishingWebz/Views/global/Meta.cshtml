@@ -1,0 +1,12 @@
+﻿@using TheWishingWebz.Models.global
+
+@model Meta
+
+@* Meta (Top) *@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="@Html.Raw(Model.strMetaDescription)">
+<meta name="keywords" content="@Html.Raw(Model.strMetaKeywords)">
+<meta name="author" content="">
+@* Title *@
+<title>@Html.Raw(Model.strMetaTitle)@(!Model.strMetaTitle.Contains(Model.strSiteName) ? " | " + Model.strSiteName : "")</title>

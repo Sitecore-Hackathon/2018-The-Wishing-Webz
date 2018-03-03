@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {F5383E9A-0CA2-4B3C-BE25-0C8CF950B9C4}
+database: master
+path: /sitecore/templates/wishingwebz/B_MetaData/Base Meta Data
+parent: {241F0109-B476-4193-8073-F592B1EB7C2C}
+name: Base Meta Data
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+created: 20180303T035239Z
+
+----version----
+language: en
+version: 1
+revision: d41c63d0-c5b7-4ffc-a8d7-ee2a79a2eb57
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180303T035239Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d41c63d0-c5b7-4ffc-a8d7-ee2a79a2eb57
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180303T035243Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

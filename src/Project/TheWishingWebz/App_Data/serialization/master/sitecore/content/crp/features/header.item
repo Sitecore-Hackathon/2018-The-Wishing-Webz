@@ -1,0 +1,91 @@
+----item----
+version: 1
+id: {B9586BAF-C946-4835-A72A-8EEBD5082A0E}
+database: master
+path: /sitecore/content/crp/features/header
+parent: {E4D21865-765C-4134-B002-2B2D51D4F7E9}
+name: header
+master: {00000000-0000-0000-0000-000000000000}
+template: {6CF0D30F-5250-4502-8FAA-B6EB3A4B240A}
+templatekey: D_Header
+created: 20180303T063751Z
+
+----version----
+language: en
+version: 1
+revision: ff1e4f3f-c163-4f7a-9b61-2a5887494ece
+
+----field----
+field: {4D3E9EF1-2FAA-49A4-97D4-58F2AAA0564D}
+name: Title
+key: title
+content-length: 6
+
+header
+----field----
+field: {C8C7FC79-30E1-4D41-A0E6-9245973D5DD8}
+name: Description
+key: description
+content-length: 1693
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Crushed Red Pepper</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger modal-item" href="#signup-modal-1">Sign Up</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#privacy">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="/Content/crp/img/crushedredpepper.png" alt="" />
+        <h1 class="text-uppercase mb-0">Crushed Red Pepper</h1>
+        <hr class="star-light" />
+        <h2 class="font-weight-light mb-0">Crushed Red Pepper is tasty on everything!</h2>
+      </div>
+    </header>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180303T063751Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ff1e4f3f-c163-4f7a-9b61-2a5887494ece
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180303T071312Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

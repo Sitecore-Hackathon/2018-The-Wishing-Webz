@@ -1,0 +1,39 @@
+﻿@using SC_Context = Sitecore.Context
+@using System.Threading
+
+<!DOCTYPE html>
+<html lang="@Html.Sitecore().CurrentItem.Language.Name.ToString()">
+<head>
+    @* Meta *@
+    @Html.Sitecore().Placeholder("Meta")
+    @* Styles *@
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/global/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="/Content/global/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Plugin CSS -->
+    <link href="/Content/global/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="/Content/global/css/freelancer.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+    @* Header *@
+    @Html.Sitecore().Placeholder("Header")
+    @* Content *@
+    @Html.Sitecore().Placeholder("Content")
+    @* Footer *@
+    @Html.Sitecore().Placeholder("Footer")
+
+    @* Scripts *@
+    <!-- Bootstrap core JavaScript -->
+    <script src="/Content/global/vendor/jquery/jquery.min.js"></script>
+    <script src="/Content/global/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="/Content/global/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/Content/global/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/Content/global/js/freelancer.js"></script>
+</body>
+</html>

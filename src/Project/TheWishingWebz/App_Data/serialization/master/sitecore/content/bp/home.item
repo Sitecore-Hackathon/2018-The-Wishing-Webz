@@ -1,0 +1,125 @@
+----item----
+version: 1
+id: {8656B98A-3A98-49A5-BB91-BC186ED77718}
+database: master
+path: /sitecore/content/bp/home
+parent: {A9609A02-344A-45E2-9FEC-8CB453F936A9}
+name: home
+master: {00000000-0000-0000-0000-000000000000}
+template: {B7EC810C-A374-4FB0-9129-50B672F7FBC0}
+templatekey: Default
+created: 20180303T035637Z
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+Network/16x16/home.png
+----version----
+language: en
+version: 1
+revision: 0b0705ed-7323-454b-9da1-6f441db717af
+
+----field----
+field: {3EC999B8-CFFC-4A74-84B6-1215F9FF7F9A}
+name: Meta Title
+key: meta title
+content-length: 4
+
+Home
+----field----
+field: {1DDCCF62-6A5B-4A97-BA9B-31642D630775}
+name: Meta Keywords
+key: meta keywords
+content-length: 22
+
+black pepper, bp, home
+----field----
+field: {5F306196-ED7E-41FD-A8A5-3A2C5818F018}
+name: Meta Description
+key: meta description
+content-length: 37
+
+Your #1 source of Black Pepper fandom
+----field----
+field: {4D3E9EF1-2FAA-49A4-97D4-58F2AAA0564D}
+name: Title
+key: title
+content-length: 12
+
+Black Pepper
+----field----
+field: {C8C7FC79-30E1-4D41-A0E6-9245973D5DD8}
+name: Description
+key: description
+content-length: 4376
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary">About</h2>
+        <hr class="star-dark mb-5" />
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p class="lead">This pantry staple is FlavorSealed for superior freshness and features an intense woody-piney flavor that is hot and biting to the taste that adds bold flavor to almost any culinary creation. Shake this premium quality pepper on tossed salads or steamed veggies for a tasty kick. Or sprinkle on roasted meats or use in marinades to develop deep, zesty flavor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="bg-primary text-white mb-0">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white mb-0">Privacy Policy</h2>
+        <hr class="star-light mb-5" />
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Collection and Use of Your Non-Personal Information</h3>
+            <p>We also collect non-personal information − data in a form that does not permit direct association with any specific individual. We may collect, use, transfer, and disclose non-personal information for any purpose. The following are some examples of non-personal information that we collect and how we may use it:</p>
+            <p>We may collect information such as occupation, language, zip code, area code, cooking preferences, location, and the time zone so that we can better understand customer behavior and improve our products, services, and advertising.</p>
+            <p>We also may collect information regarding customer activities on our website. This information is aggregated and used to help us provide more useful information to our customers and to understand which parts of our website, products, and services are of most interest. Aggregated data is considered non-personal information for the purposes of this Privacy Policy.</p>
+            <p>If we do combine non-personal information with personal information the combined information will be treated as personal information for as long as it remains combined.</p>
+
+            <h3>Cookies</h3>
+            <p>A cookie is a small text file that is stored on a user’s computer for record-keeping purposes. We use both session ID cookies and persistent cookies on our websites. We use session cookies to make it easier for you to navigate our site. A session ID cookie expires when you close your browser. A persistent cookie remains on your hard drive for an extended period of time. Persistent cookies enable us to track and target the interests of our users to enhance their experience on our site. You can remove persistent cookies by following directions provided in your Internet browser’s “help” file.</p>
+            <p>If you reject cookies, you may still use our websites, but your ability to use some areas of our sites will be limited and we will not be able to provide you with the most convenient experience.</p>
+
+            <h3>Log Files</h3>
+            <p>As is true of most websites, we gather certain information automatically and store it in log files. This information includes internet protocol (IP) addresses, browser type (such as Internet Explorer or Firefox), internet service provider (ISP), referring/exit pages, the operating system you may be using (e.g., Windows XP or Mac OS), a date/time stamp of when you visited our site, and click-stream data.</p>
+            <p>We use this information, which does not identify individual users, to analyze aggregate trends, to administer the site, to track users’ movements around the site and to gather demographic information about our user base as a whole.</p>
+            <p>We treat information collected by cookies and other technologies as non-personal information. However, to the extent that Internet Protocol (IP) addresses or similar identifiers are considered personal information by local law, we also treat these identifiers as personal information. Similarly, to the extent that non-personal information is combined with personal information, we treat the combined information as personal information for the purposes of this Privacy Policy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180303T035637Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0b0705ed-7323-454b-9da1-6f441db717af
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180303T070057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
